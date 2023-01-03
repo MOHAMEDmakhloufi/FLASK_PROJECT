@@ -1,0 +1,134 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+body, html{
+    margin: 0;
+}
+.landing{
+    height: 100vh;
+    position: relative;
+}
+.landing img{
+
+    position: absolute;
+    height: 100Vh;
+    margin: auto;
+    object-fit: cover;
+    width: 100%;
+    border-top-right-radius: 10px;
+    z-index: -1000;
+    
+}
+.landing img.img2{
+    display: none;
+}
+.landing h1{
+    position: absolute;
+    left: 50%;
+    top: 12%;
+    margin: auto;
+    transform: translateX(-50%);
+}
+.inputs{
+    position: absolute;
+    bottom: 5%;
+    width: 60%;
+    margin: auto 20%;
+}
+.votre_budget{
+    width: 35%;
+}
+.inputs label{
+    color: white;
+    font-size: 30px;
+}
+.inputs input{
+    height: 60px;
+    color: #6A0106 !important;
+    font-weight: bold;
+    background-color: #ffffffab;
+}
+.inputs input::placeholder {
+    color: #6a010688 !important;
+  }
+.inputs .prices input{
+    width: 45%;
+    
+}
+.inputs .prices span{
+    background-color: #ffffffab;
+    color: #6A0106;
+    border-radius: 10px;
+    font-size: 30px;
+    height: 60px;
+}
+.inputs .go_botton{
+    display: flex;
+    align-items: flex-end;
+   
+}
+.inputs button{
+    background-color: #ffffffab;
+    color: #6A0106;
+    font-weight: bold;
+    height: 60px;
+    width: 90px;
+    border-radius: 20px;
+}
+.inputs button:hover{
+    background-color: rgba(255, 255, 255, 0.253);
+}
+
+@media(max-width : 820px){
+    .landing img.img2{
+        display: block;
+    }
+    h1{
+        left: 50%;
+        top: 10%;
+        margin: auto;
+        transform: translateX(-50%);
+        color: white;
+        font-size: 2.5em !important;
+        line-height: 2em !important;
+        width: 70%;
+    }
+
+    .inputs{
+        
+        bottom: 5%;
+        width: 70%;
+        height: 45%;
+        margin: auto 15%;
+    }
+    .inputs > div{
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-around !important;
+        
+    }
+    .votre_budget{
+        width: 100%;
+        
+    }
+    .votre_budget > div{
+        justify-content: space-between!important;
+    }
+    .inputs button{
+        width: 100%;
+        height: 40px;
+        border-radius: 10px;
+    }
+    .inputs input, .inputs .prices span{
+        height: 45px;
+    }
+    .inputs .prices span{
+        font-size: 20px;
+    }
+}

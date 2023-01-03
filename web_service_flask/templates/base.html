@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basboussa Cars</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='master.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="landing">
+        <img class="img1" src="{{ url_for('static', filename='dodge2.jpg') }}" alt="">
+        <img class="img2" src="{{ url_for('static', filename='tires-muscle-cars-dodge-dodge-charger-rt-wallpaper-preview.jpg') }}" alt="">
+        <!-- title  -->
+        <h1>Voulez-Vous Exploiter Votre FCR ?</h1>
+        <!-- inputs -->
+        <form method="post">
+            <div class="inputs">
+                <div class="d-flex justify-content-between">
+                    <div class="modele">
+                        <label for="modele" class="form-label">modèle</label>
+                        <input type="text" class="form-control" id="modele" placeholder="modele de voiture" name="modele">
+                    </div>
+                    <div class="votre_budget">
+                        <label for="prices" class="form-label">votre budget</label>
+                        <div class="prices d-flex justify-content-start">
+                            <input type="number" class="form-control" id="prices" placeholder="20000"  name="prices" required>
+                            <input type="number" class="form-control mx-3" id="prices2" placeholder="70000" name="prices2" required>
+                            <span class="px-3 py-2" > € </span>
+                        </div>
+                    </div>
+                    <div class="go_botton ">
+                        <button class="btn px-3 py-2" >GO</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
